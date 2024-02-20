@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Flask App</title>
+  </head>
+  <body>
+    <h1>Welcome to my Flask App!</h1>
+    <form action="/execute" method="post">
+      <label for="frame_len">Frame length:</label>
+      <input type="number" id="frame_len" name="frame_len" required />
+      <br />
+      <label for="tcp_srcport">TCP source port:</label>
+      <input type="number" id="tcp_srcport" name="tcp_srcport" required />
+      <br />
+      <label for="tcp_dstport">TCP destination port:</label>
+      <input type="number" id="tcp_dstport" name="tcp_dstport" required />
+      <br />
+      <label for="tcp_window_size">TCP window size:</label>
+      <input type="number" id="tcp_window_size" name="tcp_window_size" required />
+      <br />
+      <button type="submit">Execute</button>
+    </form>
+  </body>
+</html>
